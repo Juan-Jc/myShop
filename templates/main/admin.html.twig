@@ -12,9 +12,13 @@ Administrar
     {{ include('main/_sideAdminBar.html.twig')}}
     <section class="w-full">
         <h1 class="text-4xl text-center my-8">Administrador</h1>
-        <article class="mx-5">
-            <h2>Tabla de Usuarios</h2>
+        <article class="m-5">
+            <h2 class="text-center">Tabla de Usuarios</h2>
             {{include('main/_tableUsers.html.twig')}}
+        </article>
+        <article class="m-5">
+            <h2 class="text-center">Tabla de Productos</h2>
+            {{include('main/_tableProducts.html.twig')}}
         </article>
 
     </section>
