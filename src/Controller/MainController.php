@@ -16,4 +16,8 @@ class MainController extends AbstractController {
     public function register():Response{
         return $this->render('main/register.html.twig');
     }
+      #[Route('/contact')]
+    public function contact():Response{
+        return $this->render('main/contact.html.twig');
+    }
 }
