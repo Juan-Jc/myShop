@@ -10,8 +10,12 @@ Administrar
 </header>
 <main class="flex">
     {{ include('main/_sideAdminBar.html.twig')}}
-    <section class="">
+    <section class="w-full">
         <h1 class="text-4xl text-center my-8">Administrador</h1>
+        <article class="mx-5">
+            <h2>Tabla de Usuarios</h2>
+            {{include('main/_tableUsers.html.twig')}}
+        </article>
 
     </section>
     
