@@ -1,0 +1,18 @@
+{% extends 'base.html.twig'%}
+
+{% block title%}
+Registro de Usuario
+{% endblock %}
+
+{% block body%}
+<header>
+    {{ include('main/_navbar.html.twig')}}
+</header>
+<main class="my-8">
+    <h1 class="text-4xl text-center my-8">Registrarse</h1>
+{{ include('main/_registerForm.html.twig')}}
+</main>
+{{ include('main/_footer.html.twig')}}
+
+
+{% endblock %}

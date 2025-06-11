@@ -14,6 +14,6 @@ class MainController extends AbstractController {
     }
     #[Route('/register')]
     public function register():Response{
-        return $this->render('register.html.twig');
+        return $this->render('main/register.html.twig');
     }
 }
