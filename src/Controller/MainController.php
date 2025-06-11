@@ -20,4 +20,16 @@ class MainController extends AbstractController {
     public function contact():Response{
         return $this->render('main/contact.html.twig');
     }
+      #[Route('/login')]
+    public function login():Response{
+        return $this->render('main/login.html.twig');
+    }
+      #[Route('/product')]
+    public function product():Response{
+        return $this->render('main/product.html.twig');
+    }
+      #[Route('/admin')]
+    public function admin():Response{
+        return $this->render('main/admin.html.twig');
+    }
 }

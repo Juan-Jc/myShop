@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title%}
+Inicia Sessión
+{% endblock %}
+
+{% block body%}
+<header>
+{{ include('main/_navbar.html.twig')}}
+</header>
+<main class="flex justify-center my-8">
+    {{ include('main/_loginForm.html.twig')}}
+    
+</main>
+{{ include('main/_footer.html.twig')}}
+
+
+
+{% endblock %}

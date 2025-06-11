@@ -1,0 +1,21 @@
+{% extends 'base.html.twig'%}
+
+{% block title%}
+Productos
+{% endblock %}
+
+{% block body%}
+<header>
+    {{ include('main/_navbar.html.twig')}}
+</header>
+<main class="my-8">
+    <h1 class="text-4xl text-center my-8">Producto</h1>
+    <section class="flex justify-around">
+        {{ include('main/_productCard.html.twig')}}
+    </section>
+
+</main>
+{{ include('main/_footer.html.twig')}}
+
+
+{% endblock %}
