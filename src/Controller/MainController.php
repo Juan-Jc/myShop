@@ -10,7 +10,10 @@ class MainController extends AbstractController {
 
     #[Route('/')]
     public function home():Response{
-        $count = 457;
-        return $this->render('main/homepage.html.twig', ['conteo' => $count]);
+        return $this->render('main/homepage.html.twig');
+    }
+    #[Route('/register')]
+    public function register():Response{
+        return $this->render('register.html.twig');
     }
 }

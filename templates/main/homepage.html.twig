@@ -1,5 +1,17 @@
-<h1>Tengo Sueño</h1>
+{% extends 'base.html.twig' %}
 
-<div>
-    {{ conteo }}
-</div>
+{% block title%}
+Inicio
+{% endblock %}
+
+{% block body%}
+<header>
+{{ include('main/_navbar.html.twig')}}
+</header>
+<main>
+    {{ include('main/_carrousel.html.twig')}}
+</main>
+
+
+
+{% endblock %}
