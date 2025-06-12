@@ -12,23 +12,23 @@ class MainController extends AbstractController {
     public function home():Response{
         return $this->render('main/homepage.html.twig');
     }
-    #[Route('/register')]
+    #[Route('/register', 'register') ]
     public function register():Response{
         return $this->render('main/register.html.twig');
     }
-      #[Route('/contact')]
+      #[Route('/contact', 'contact')]
     public function contact():Response{
         return $this->render('main/contact.html.twig');
     }
-      #[Route('/login')]
+      #[Route('/login', 'login')]
     public function login():Response{
         return $this->render('main/login.html.twig');
     }
-      #[Route('/product')]
+      #[Route('/product', 'product')]
     public function product():Response{
         return $this->render('main/product.html.twig');
     }
-      #[Route('/admin')]
+      #[Route('/admin', 'admin')]
     public function admin():Response{
         return $this->render('main/admin.html.twig');
     }
